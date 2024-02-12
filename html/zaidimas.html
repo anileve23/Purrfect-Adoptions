@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purrfect Adoptions</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js"></script> 
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="home.html">
+        <img class="logo" src="../images/purr.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Form</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="schema.html">Schema</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="settings.html">Settings</a>
+         </li>
+         <li class="nav-item active">
+          <a class="nav-link" href="zaidimas.html">Game</a>
+       </li>         
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+
+  <main class="main-section">
+    <div class="container main-flex">
+      <section>
+        <article class="main-article">
+
+          <!-- New div for the "Atspėk žodį" game -->
+          <div class="game-section">
+            <h1>Atspėk žodį</h1>
+            <p><b>Užuomena:</b> Tai gyvūnas!</p>
+            <p id="displayWord"></p>
+            <p>Spėk vieną raidę: 
+              <input type="text" maxlength="1" id="letter-input"> 
+            </p>
+            <button onclick="guessLetter()">Pateikti</button>
+          </div>
+        </article>
+        <br>
+
+        <section class="categories">
+            <div class="card">
+                    <a href="wiskers.html">
+                       <img src="../images/cat2.jpg" alt="Picture of a cat named Whiskers">
+                       <h3>Whiskers</h3>
+                       <p>A playful tabby with a mischievous streak, Whiskers loves chasing toys and snuggling up for naps in the sun.</p></a>
+                </div><br>
+                <div class="card">
+                   <a href="luna.html">
+                       <img src="../images/cat4.jpg" alt="Picture of a cat named Luna">
+               <h3>Luna</h3>
+                <p>This elegant black cat has a mysterious air and a gentle demeanor. Luna enjoys gazing out windows and curling up on cozy blankets.</p></a>
+               </div><br>
+               <div class="card">
+                   <a href="oliver.html">
+                   <img src="../images/cat5.jpg" alt="Picture of a cat named Oliver">
+                   <h3>Oliver</h3>
+                   <p>Affectionate and sociable, Oliver is a ginger cat who adores meeting new people and loves to be the center of attention.</p></a>
+               </div><br>
+               <div class="card">
+                   <a href="mittens.html">
+                   <img src="../images/cat7.jpg" alt="Picture of a cat named Mittens">
+                   <h3>Mittens</h3>
+                   <p>With adorable white paws and a curious nature, Mittens is an inquisitive kitten who explores every nook and cranny of the house.</p></a>
+               </div><br>
+               <div class="card">
+                   <a href="bella.html">
+                   <img src="../images/cat6.jpg" alt="Picture of a cat named Bella">
+                   <h3>Bella</h3>
+                   <p>Graceful and independent, Bella is a sleek Siamese cat with a strong personality. She enjoys lounging in high places and observing her surroundings.</p></a>
+               </div><br>
+               <div class="card">
+                <a href="simba.html">
+                  <img src="../images/cat13.jpg" alt="Picture of a cat named Simba">
+                   <h3>Simba</h3>
+                   <p>With a regal demeanor and a love for lounging in the sun, Simba is a majestic orange cat who enjoys being pampered and showered with affection.</p></a>
+               </div><br>
+               <div class="card">
+                <a href="cleo.html">
+                  <img src="../images/cat14.jpg" alt="Picture of a cat named Cleo">
+                   <h3>Cleo</h3>
+                   <p>Cleo is a playful and adventurous calico cat with a knack for finding hidden spots to nap and a penchant for chasing after feather toys.</p></a>
+               </div><br>
+               <div class="card">
+                <a href="felix.html">
+                  <img src="../images/cat11.jpg" alt="Picture of a cat named Felix">
+                   <h3>Felix</h3>
+                   <p>Playful and energetic, Felix is a tuxedo cat who loves interactive toys and enjoys the company of both humans and other cats.</p></a>
+               </div><br>
+               <div class="card">
+                <a href="milo.html">
+                  <img src="../images/cat12.jpg" alt="Picture of a cat named Milo">
+                   <h3>Milo</h3>
+                   <p>Affectionate and cuddly, Milo is a fluffy gray cat who adores lap time and will purr contentedly while being petted.</p></a>
+               </div><br>
+          </section>
+      </section>
+
+      <aside>
+        <section class="advertisements">
+          <h2>Advertisements</h2>
+          <img src="../images/gif1.gif" alt="advertisement 1">
+          <img src="../images/gif2.gif" alt="advertisement 2">
+          <img src="../images/gif3.gif" alt="advertisement 3">
+          <img src="../images/gif4.gif" alt="advertisement 4">
+          <img src="../images/gif5.gif" alt="advertisement 5">
+          <img src="../images/gif6.gif" alt="advertisement 6">
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text">Purrfect Adoptions</p>
+      <p class="copyright-info">Copyright 2024</p>
+      <a href="terms-conditions.html" class="footer-button">Terms & Conditions</a>
+    </div>
+  </footer>
+
+<!-- Bootstrap and Popper.js scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Your custom JavaScript -->
+<!-- Your custom JavaScript -->
+<script src="../js/settings.js"></script>
+<script src="../js/JavaScript.js"></script>
+</body>
+</html>

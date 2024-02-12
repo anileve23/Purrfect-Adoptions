@@ -1,0 +1,625 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;700&display=swap');
+
+/* custom variables */
+:root {
+  --clr-text: #707070;
+  --clr-light-blue: #1792D2;
+  --clr-heavy-blue: #143774;
+  --clr-light-gray: #EBEBEB;
+
+  --ff-main: 'Ubuntu', sans-serif;
+  --ff-accent: 'Lora', serif;
+
+  --fs-main: 1.8rem;
+}
+
+/* global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  font-weight: 300;
+  color: var(--clr-text);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  background-color: #dce3f9;
+  padding: 5rem 0;
+}
+
+.header-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+header .nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+header .nav-link {
+  font-family: var(--ff-main);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  text-decoration: none;
+  margin: 0 3rem;
+  padding: 0.3rem 0;
+}
+
+header .active {
+  border-bottom: 1px solid #717171;
+}
+
+/* main */
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.main-article {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #717171;
+  width: 95%;
+  position: relative;
+  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.main-article .overlay-text {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  background: rgba(5, 4, 4, 0.684); /* Adjust opacity here */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width */
+  color: lightgray;
+}
+
+/* aside */
+
+aside .advertisements {
+  border: 2rem solid var(--clr-light-gray);
+  padding: 2rem;
+}
+
+aside h2 {
+  font-size: var(--fs-main);
+  color: var(--clr-heavy-blue);
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+aside img {
+  margin-top: 3rem;
+  max-height: 10rem;
+  object-fit: cover;
+}
+
+.advertisements img {
+  max-height: 50rem;
+  object-fit: cover;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 300px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form container */
+form {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form header */
+form h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #143774;
+}
+
+/* Form labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #143774;
+  font-size: 18px;
+}
+
+.adopt-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Form container */
+form {
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.example {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.border-0 {
+  border-bottom: 0px;
+}
+
+/* footer */
+footer {
+  background-color: #dce3f9;
+  padding: 5rem;
+  text-align: center;
+}
+
+footer .footer-text {
+  font-weight: 700;
+  opacity: 54%;
+}
+
+footer .copyright-info {
+  opacity: 54%;
+  margin-top: 0.5rem;
+}
+
+/* Style for the link/button */
+.footer-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  opacity: 54%;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #f0f4f7;
+}
+
+/* Style for the active button */
+.footer-button.active {
+  border-bottom: 1px solid #717171;
+  opacity: 54%;
+}
+
+/* Add this CSS to your existing stylesheet or create a new one */
+.categories .card a {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set the text color to black */
+  display: inline; /* Ensure the link behaves like inline text */
+}
+
+/* Add this to your existing CSS */
+#main-section {
+  padding: 5px;
+}
+
+p {
+  color: #707070 !important;
+}
+
+.different {
+  border: medium solid;
+  color: red;
+}
+
+em {
+  border: inherit;
+}
+
+.article-text{
+  color: #f9f9f9 !important;
+}
+
+/* Add this style to make navigation links same color as background when menu is opened */
+body.menu-opened header .navbar-nav .nav-link {
+  color: rgb(220, 227, 249) !important;
+}
+
+.bg-light {
+  background-color: #dce3f9 !important;
+}
+
+/* media queries - responsiveness */
+/* Add this media query for devices with a width of 600 pixels or more */
+@media only screen and (min-width: 600px) {
+  /* Adjust styles for this breakpoint */
+  .main-flex {
+    gap: 2rem;
+    padding: 2rem 0 0 2rem;
+  }
+
+  .card {
+    width: calc(80% - 15px); /* Display two cards per line */
+  }
+
+  .main-article {
+    width: 100%; /* Adjust width for better layout */
+  }
+
+  .card {
+    width: calc(80% - 15px); /* Adjust width to fit two cards per row */
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 55px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card h3, p {
+    padding: 15px;
+    margin: 0; /* Remove default margin for consistency */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+
+  ul {
+    color: #666;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Table Styles */
+  table {
+    width: 40%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  form {
+    max-width: 90%;
+  }
+  
+  /* Add this CSS to your existing stylesheet or create a new one */
+  body.menu-opened header .navbar-nav .nav-link {
+    color: #717171 !important;
+  }
+
+}
+
+  /* Add styles for other elements if needed for 600px breakpoint */
+
+@media only screen and (min-width: 900px) {
+  /* header styles */
+  .header-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .nav-list {
+    flex-direction: row;
+  }
+
+  header .nav-link {
+    margin: 0 0.2rem;
+  }
+
+  /* main styles */
+  .main-flex {
+    flex-direction: row;
+    gap: 4rem;
+    padding: 5rem 0 0 5rem;
+  }
+
+  aside {
+    margin-top: 0;
+    margin-left: 5rem;
+  }
+
+  .articles article {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+      "image heading"
+      "image article-text";
+    column-gap: 2rem;
+  }
+
+  .articles img {
+    min-height: 22rem;
+    object-fit: cover;
+  }
+
+  .articles h2 {
+    margin-top: 3rem;
+  }
+
+  .main-article img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .card {
+    width: calc(100% - 15px); /* Adjust width to fit two cards per row */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 30px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card h3 {
+    padding: 15px;
+    margin: 0; /* Remove default margin for consistency */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+
+  .categories {
+    width: 95%; /* Adjust width as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  /* List Styles */
+  ul {
+    color: #666;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Table Styles */
+  table {
+    width: 40%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  form {
+    max-width: 90%;
+  }
+}
+
+/* Add this media query for devices with a width of 1200 pixels or more */
+@media only screen and (min-width: 1200px) {
+  /* Adjust styles for this breakpoint */
+  .main-flex {
+    gap: 2rem;
+    padding: 2rem 0 0 2rem;
+  }
+
+  .card {
+    width: calc(30% - 15px); /* Display two cards per line */
+  }
+
+  .main-article {
+    width: 100%; /* Adjust width for better layout */
+  }
+
+  .card {
+    width: calc(50% - 15px); /* Adjust width to fit two cards per row */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 5px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card h3, p {
+    padding: 15px;
+    margin: 0; /* Remove default margin for consistency */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+
+  ul {
+    color: #666;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Table Styles */
+  table {
+    width: 40%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  form {
+    max-width: 90%;
+  }
+}
+
+/* Add this media query for devices with a width of 1600 pixels or more */
+@media only screen and (min-width: 1600px) {
+  /* Adjust styles for this breakpoint */
+  .main-flex {
+    gap: 2rem;
+    padding: 2rem 0 0 2rem;
+  }
+
+  .card {
+    width: calc(30% - 15px); /* Display two cards per line */
+  }
+
+  .main-article {
+    width: 100%; /* Adjust width for better layout */
+  }
+
+  .card {
+    width: calc(30% - 15px); /* Adjust width to fit two cards per row */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 5px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card h3, p {
+    padding: 15px;
+    margin: 0; /* Remove default margin for consistency */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+
+  ul {
+    color: #666;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  /* Table Styles */
+  table {
+    width: 40%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  form {
+    max-width: 90%;
+  }
+}
+
